@@ -1,22 +1,20 @@
 <p align="center">
-  <img align="center" alt="react-darkreader" src="https://darkreader.org/images/darkreader-icon-256x256.png" />
+  <img align="center" alt="use-vuejs" width="256px" src="https://camo.githubusercontent.com/5ebc638bb3e5113c5a87a5462197c35f40f7185ea9940e7723846b6e403f8a6b/68747470733a2f2f6372656174652d72656163742d6170702e6465762f696d672f6c6f676f2e737667" />
 </p>
 <h1 align="center">useVuejs</h1>
 
-<p align="center">🌓 A React Hook for adding a dark / night mode to your site inspired by <a href="https://github.com/darkreader/darkreader" target="_blank">darkreader</a>
+<p align="center">🥑 A React Hook similar to the <a href="https://github.com/darkreader/darkreader" target="_blank">Vuejs</a> API. 
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-darkreader" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/react-darkreader?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/react-darkreader" /> <a href="https://github.com/umijs/dumi" target="_blank"><img alt="dumi" src="https://img.shields.io/badge/docs%20by-dumi-blue" /></a> <img alt="license" src="https://img.shields.io/github/license/Turkyden/react-darkreader" /> <a href="https://www.jsdelivr.com/package/npm/react-darkreader" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/react-darkreader/badge" /></a>
+  <a href="https://www.npmjs.com/package/use-vuejs" target="_blank"><img alt="npm" src="https://img.shields.io/npm/v/use-vuejs?color=orange" /></a> <img alt="npm" src="https://img.shields.io/npm/dt/use-vuejs" /> <a href="https://github.com/umijs/dumi" target="_blank"><img alt="dumi" src="https://img.shields.io/badge/docs%20by-dumi-blue" /></a> <img alt="license" src="https://img.shields.io/github/license/Turkyden/use-vuejs" /> <a href="https://www.jsdelivr.com/package/npm/use-vuejs" target="_blank"><img alt="jsdelivr" src="https://data.jsdelivr.com/v1/package/npm/use-vuejs/badge" /></a>
 </p>
 
-<p align="center">Live Demo ✨ <a href="https://react-darkreader.vercel.app" target="_blank">https://react-darkreader.vercel.app</a></p>
-
-A react hook similar to the vuejs API.
+<p align="center">Live Demo ✨ <a href="https://use-vuejs.vercel.app" target="_blank">https://use-vuejs.vercel.app</a></p>
 
 ## Hello Vue
 
-```jsx
+```jsx | pure
 function App() {
   const { message } = useVuejs({
     data: {
@@ -32,7 +30,7 @@ ReactDOM.render(<App />, document.querySelector('#app'));
 
 ## `v-bind`
 
-```jsx
+```jsx | pure
 function App2() {
   const { message } = useVuejs({
     data: {
@@ -52,7 +50,7 @@ ReactDOM.render(<App2 />, document.querySelector('#app-2'));
 
 ## `v-if`
 
-```jsx
+```jsx | pure
 function App3() {
   const { seen } = useVuejs({
     data: {
@@ -68,7 +66,7 @@ ReactDOM.render(<App3 />, document.querySelector('#app-3'));
 
 ## `v-for`
 
-```jsx
+```jsx | pure
 function App4() {
   const { todos } = useVuejs({
     data: {
@@ -96,7 +94,7 @@ ReactDOM.render(<App4 />, document.querySelector('#app-4'));
 
 ## Methods
 
-```jsx
+```jsx | pure
 function App5() {
   const { message, reverseMessage } = useVuejs({
     data: {
@@ -125,7 +123,7 @@ ReactDOM.render(<App5 />, document.querySelector('#app-5'));
 
 ## `v-model`
 
-```jsx
+```jsx | pure
 function App6() {
   const { message, vModel } = useVuejs({
     data: {
