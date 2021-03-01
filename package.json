@@ -1,6 +1,6 @@
 {
   "name": "use-vuejs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React Hook similar to the Vuejs API.",
   "keywords": [
     "react",
