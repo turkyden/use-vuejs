@@ -1,7 +1,27 @@
 {
-  "private": true,
   "name": "use-vuejs",
   "version": "1.0.2",
+  "description": "A React Hook similar to the Vuejs API.",
+  "keywords": [
+    "react",
+    "react-hooks",
+    "vue",
+    "vuejs",
+    "hooks"
+  ],
+  "authors": {
+    "name": "Turkyden",
+    "email": "wj871287@gmail.com"
+  },
+  "homepage": "http://github.com/Turkyden/use-vuejs",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Turkyden/use-vuejs.git"
+  },
+  "bugs": {
+    "url": "http://github.com/Turkyden/use-vuejs/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",

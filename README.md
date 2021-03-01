@@ -12,7 +12,48 @@
 
 <p align="center">Live Demo ✨ <a href="https://use-vuejs.vercel.app" target="_blank">https://use-vuejs.vercel.app</a></p>
 
-## Hello Vue
+## Getting Started
+
+Install with yarn
+
+```bash
+yarn add use-vuejs
+```
+
+Or you can
+
+```bash
+npm install use-vuejs
+```
+
+Or inject the script at your page by [jsdelivr CDN](https://www.jsdelivr.com/)
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/use-vuejs@latest/dist/index.min.js"></script>
+```
+
+## 🚀 Usage
+
+You can import the darkmode as a react component.
+
+```tsx | pure
+import React from 'react';
+import useVuejs from 'use-vuejs';
+
+export default () => {
+  const { data } = useVuejs({
+    data: {
+      message: 'Hello Vue!',
+    },
+  });
+
+  return <div id="app">{data.message}</div>;
+};
+```
+
+## 📔 API
+
+### Hello Vue
 
 ```jsx | pure
 function App() {
@@ -28,7 +69,7 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
-## `v-bind`
+### `v-bind`
 
 ```jsx | pure
 function App2() {
@@ -48,7 +89,7 @@ function App2() {
 ReactDOM.render(<App2 />, document.querySelector('#app-2'));
 ```
 
-## `v-if`
+### `v-if`
 
 ```jsx | pure
 function App3() {
@@ -64,7 +105,7 @@ function App3() {
 ReactDOM.render(<App3 />, document.querySelector('#app-3'));
 ```
 
-## `v-for`
+### `v-for`
 
 ```jsx | pure
 function App4() {
@@ -92,7 +133,7 @@ function App4() {
 ReactDOM.render(<App4 />, document.querySelector('#app-4'));
 ```
 
-## Methods
+### Methods
 
 ```jsx | pure
 function App5() {
@@ -121,7 +162,7 @@ function App5() {
 ReactDOM.render(<App5 />, document.querySelector('#app-5'));
 ```
 
-## `v-model`
+### `v-model`
 
 ```jsx | pure
 function App6() {
@@ -167,3 +208,28 @@ Build library via `father-build`,
 ```bash
 $ npm run build
 ```
+
+## Contributors
+
+Thanks goes to these people (emoji key):
+
+<table style="width: auto">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Turkyden">
+        <img src="https://avatars0.githubusercontent.com/u/24560160?s=460&u=36a6072b8220e6ad7c0c7f7dbf97cc3dd796a8d0&v=4" width="100px;" alt=""/><br />
+        <sub><b>Turkyden</b></sub></a><br />
+        💻📖🚇⚠️
+    </td>
+    <td align="center">
+      <a href="https://github.com/KnowsCount">
+        <img src="https://avatars3.githubusercontent.com/u/56480008?s=460&u=19d370371e9be3b09766a4dae4435de3593fd0a9&v=4" width="100px;" alt=""/><br />
+        <sub><b>KnowsCount</b></sub></a><br />
+        📖
+    </td>
+  </tr>
+</table>
+
+## License
+
+[MIT](https://github.com/Turkyden/use-vuejs/blob/main/LICENSE)
