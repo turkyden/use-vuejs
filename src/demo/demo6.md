@@ -21,7 +21,8 @@ export default () => {
   return (
     <div id="app-6">
       <p>{data.message}</p>
-      <input onChange={vModel} />
+      <input {...v_model(message)} />
+      {/** <input v-model="message" /> **/}
     </div>
   );
 };

@@ -12,7 +12,7 @@ import useVuejs from 'use-vuejs';
 export default () => {
   const { data } = useVuejs({
     data: {
-      getMessage: function() {
+      get message() {
         return '页面加载于 ' + new Date().toLocaleString();
       },
     },
@@ -20,7 +20,7 @@ export default () => {
 
   return (
     <div id="app-2">
-      <span title={data.getMessage()}>
+      <span title={data.message}>
         鼠标悬停几秒钟查看此处动态绑定的提示信息！
       </span>
     </div>
